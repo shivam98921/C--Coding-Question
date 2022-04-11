@@ -1,0 +1,22 @@
+using System;
+
+class HelloWorld
+{
+    static void Main(string[] args)
+    {
+        string value= "Hello World";
+        
+        string table="";
+        string result="";
+        
+        foreach(char str in value)
+        {
+            if(table.IndexOf(str)==-1) // will check str indexing wise
+            {
+                table=table+str;
+                result+=str;
+            }
+        }
+        Console.WriteLine(result);
+    }
+}
